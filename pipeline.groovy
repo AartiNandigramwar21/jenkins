@@ -4,7 +4,7 @@ pipeline {
         stage('pull-stage') {
             steps {
                 // git branch: 'main', url: 'https://github.com/Anilbamnote/student-ui-app.git'
-                git branch: 'main', url: 'https://github.com/Rupen04/artifact_pom.git'
+               git branch: 'main', url: 'https://github.com/Rupen04/artifact_pom.git'
             }
         }
         stage('Build') {
