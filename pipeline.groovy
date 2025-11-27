@@ -17,7 +17,7 @@ pipeline {
                 sh '''mvn sonar:sonar \\
                 -Dsonar.projectKey=projectapp \\
                 -Dsonar.host.url=http://http://13.201.1.164:9000/
-                -Dsonar.login=8fa7659bdc79c28b6031058cc56f42f8ec08c45c'''          
+                -Dsonar.login=fcc4363236ee001b774c752bcb4bbd0a05e8a79b'''          
                    }   
                 }
         }
