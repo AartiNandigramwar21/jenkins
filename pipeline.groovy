@@ -14,12 +14,12 @@ pipeline {
         }
         stage('test') {
             steps {
-                 
-                   withSonarQubeEnv(credentialsId: 'sonar-token2') {
-    // some block
-    }
-}   
-                }
+                  
+               sh '''mvn sonar:sonar \\
+                  -Dsonar.projectKey=projectapp \\
+                  -Dsonar.host.url=http://3.110.120.203:9000/
+                  -Dsonar.login=fcc4363236ee001b774c752bcb4bbd0a05e8a79b'''
+             }
         }
         stage('deploy') {
             steps {
