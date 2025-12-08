@@ -4,7 +4,7 @@ pipeline {
         stage('pull-stage') {
             steps {
                 // git branch: 'main', url: 'https://github.com/Anilbamnote/student-ui-app.git'
-               git branch: 'main', url: 'https://github.com/Rupen04/artifact_pom.git'
+               git branch: 'main', url: 'https://github.com/Athu1717/my-student-app.git'
             }
         }
         stage('Build') {
@@ -20,9 +20,10 @@ pipeline {
               -Dsonar.login=87f3be17363654c6aa54f1cfa631bf17c9436ebf'''
              }
         }
-        stage('deploy') 
+        stage('deploy') {
             steps {
                 echo "deploy sucess"
             }
         }
      }
+ }
